@@ -17,4 +17,25 @@ print("Original list =%s" % list)
 selectionSort(list)
 
 print("Sorted list by Selection method")
-#print(list)
+print(list)
+
+
+# Bubble sorting(오름차순)
+
+def bubbleSort(list):
+    n = list
+
+    for i in range(len(n)):
+
+        for j in range(0, len(n)-i-1):
+
+            if list[j] > list[j+1]:
+                list[j], list[j+1] = list[j+1], list[j]
+
+list = [64, 25, 12, 22, 11]
+print("Original list =%s" % list)
+
+bubbleSort(list)
+
+print("Sorted list by Bubble method")
+print(list)
